@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    /* Kolom pertama & ketiga sama, tengah lebih besae */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+}
+
+.container>div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    padding: lem;
+    color: #d9480f;
+}
+.item {
+    grid-column: 1 / 3; /* membentang dari kolom 1 sampai 3 */
+}
